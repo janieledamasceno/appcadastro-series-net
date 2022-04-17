@@ -6,15 +6,15 @@ namespace DIO.Series.Interfaces
     {
         List<T> Lista();
 
-        T RetornaPorId(int id);
+            T RetornaPorId(int id);
         
-        void Insere(T entidade);
+            void Insere(T entidade);
 
-        void Excluir(int id);
+            void Excluir(int id);
 
-        void Atualiza(int id, T entidade);
+            void Atualiza(int id, T entidade);
 
-        int ProximoId();
+            int ProximoId();
     
      }
 }
