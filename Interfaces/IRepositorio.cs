@@ -1,16 +1,16 @@
-using System.Collection.Generic;
+using System.Collections.Generic;
 
-namespace Dio.Series.Interfaces
+namespace DIO.Series.Interfaces
 {
     public interface IRepositorio<T>
     {
         List<T> Lista();
 
-        T RetornaporId(int id);
+        T RetornaPorId(int id);
         
         void Insere(T entidade);
 
-        void Exclui(int id);
+        void Excluir(int id);
 
         void Atualiza(int id, T entidade);
 

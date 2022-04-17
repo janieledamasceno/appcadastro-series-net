@@ -48,7 +48,7 @@ namespace DIO.Series
 			Console.Write("Digite o id da série: ");
 			int indiceSerie = int.Parse(Console.ReadLine());
 
-			repositorio.Exclui(indiceSerie);
+			repositorio.Excluir(indiceSerie);
 		}
 
         private static void VisualizarSerie()

@@ -1,5 +1,5 @@
 using System;
-using System.Collection.Generic;
+using System.Collections.Generic;
 using DIO.Series.Interfaces;
 
 namespace DIO.Series
@@ -9,12 +9,12 @@ namespace DIO.Series
     {
     private List<Serie> listaSerie = new List<Serie>();
 
-        public void Atualiza(int id, Serie entidade)
+        public void Atualiza(int id, Serie objeto)
         {
             listaSerie[id] = objeto;
         }
 
-        public void Exclui(int id)
+        public void Excluir(int id)
         {
             listaSerie[id].Excluir();
         }
@@ -34,7 +34,7 @@ namespace DIO.Series
             return listaSerie.Count;
         }
 
-        public Serie RetornaporId(int id)
+        public Serie RetornaPorId(int id)
         {
             return listaSerie[id];
         }
